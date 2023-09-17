@@ -1,0 +1,80 @@
+* {
+    font-family: 'Itim', sans-serif !important;
+  }
+  .btn {
+    text-transform: none;
+    font-size: 100%;
+  }
+  .navbar {
+    height: 100px;
+    width: 100%;
+    background: transparent !important;
+    color: #fff !important;
+    box-shadow: none;
+  }
+  .navbar a {
+    color: #fff !important;
+  }
+  .offcanvas {
+    background: #4f4f4f;
+    color: #f4f5f6;
+    z-index: 10000 !important;
+    max-width: 220px !important;
+    min-width: 130px !important;
+  }
+  /* CAROUSEL */
+  .carousel {
+    height: fit-content;
+  }
+  /* .carousel-inner .carousel-item img {
+    height: 600px;
+    object-fit: fill;
+  } */
+  .carousel-bg-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    }
+
+     /* SERVICE CARD */
+  .nav-tabs .nav-item .nav-link:hover {
+    background: none !important;
+  }
+  .nav-tabs .nav-item .nav-link {
+    border-bottom: solid 4px #ccc !important;
+  }
+  .nav-tabs .nav-item .nav-link.active {
+    color: #3399ff !important;
+    background: none;
+    border-color: #3399ff !important;
+  }
+
+  @media screen and (max-width: 727px) {
+    .nav-tabs .nav-item{
+      width: 50%;
+    }
+    .carousel-bg-info{
+      padding: 20px;
+    }
+    .carousel-bg-info h2 {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+    .carousel-bg-info h5 {
+      font-size: .9rem !important;
+    }
+    .service-card {
+      font-size: 90%;
+      padding: 30px 10px !important;
+    }
+    .service-card ul {
+      line-height: 30px !important;
+    }
+  }

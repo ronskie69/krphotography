@@ -1,0 +1,136 @@
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navbar-logo {
+    height: 150px;
+    width: 350px;
+}
+.offcanvas ul li {
+    border: none !important;
+}
+.navbar li,
+.offcanvas ul li {
+    position: relative;
+}
+
+.navbar>ul>li,
+.offcanvas>ul>li {
+    white-space: nowrap;
+    padding: 10px 0 10px 28px;
+}
+
+.navbar li a::before,
+.offcanvas li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #fff !important;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.navbar a:hover:before,
+.navbar li:hover > a:before,
+.offcanvas a:hover:before,
+.offcanvas li:hover > a:before 
+{
+    visibility: visible;
+    width: 100%;
+}
+
+.navbar a:hover,
+.navbar li:hover > a,
+.offcanvas a:hover,
+.offcanvas li:hover > a
+{
+    color: #fff;
+}
+.header-text {
+    text-align: center;
+}
+.header-text h1,
+.header-text h2 {
+    position: relative;
+    text-align: center;
+}
+.header-text h2::before,
+.header-text h2::after,
+.header-text h1::before,
+.header-text h1::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #666 !important;
+    display: inline-block;
+}
+.header-text h2::before,
+.header-text h1::before {
+    margin: 0 15px 10px 0;
+}
+
+.header-text h2::after,
+.header-text h1::after {
+    margin: 0 0 10px 15px;
+}
+.text-hover{
+    color: #4f4f4f !important;
+}
+@keyframes left-to-right {
+    from { transform: translate(5px); }
+    to { transform: translate(0px); }
+}
+.text-hover i {
+    animation: left-to-right infinite alternate 0.5s !important;
+}
+.text-hover:hover {
+    color: #3399ff !important;
+}
+.btn-dark {
+    background-color: #4f4f4f;
+    color: #fff;
+}
+.fa-facebook, .fa-linkedin, .fa-viber {
+    transition: ease-in-out .3s;
+}
+.fa-facebook:hover, .fa-linkedin:hover, .fa-viber:hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+.bg-color-primary {
+    background: #faf3ee;
+}
+.bg-color-secondary {
+    background: #b9967f;
+}
+.text-color-pimary {
+    color: #faf3ee;
+}
+.text-color-secondary {
+    color: #b9967f;
+}
+/* FOOTER */
+.footer {
+    background: #4f4f4f;
+}
+.footer iframe {
+    height: 300px;
+    width: 100%;
+}
+@media screen and (max-width: 727px) {
+    .header-text h2::before,
+    .header-text h2::after {
+        padding: 20px;
+        display: none !important;
+    }
+    .footer {
+        font-size: 90%;
+    }
+}

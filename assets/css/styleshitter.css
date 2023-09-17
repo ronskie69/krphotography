@@ -1,0 +1,235 @@
+* {
+  font-family: 'Itim', sans-serif !important;
+}
+body {
+  overflow-x: hidden !important;
+}
+.btn {
+  text-transform: none;
+  font-size: 100%;
+}
+.navbar {
+  height: 100px;
+  width: 100%;
+  background: transparent !important;
+  color: #fff !important;
+  box-shadow: none;
+}
+.navbar a {
+  color: #fff !important;
+}
+/* NAVBAR TOGGLE SIDEBAR */
+.offcanvas {
+  background: #4f4f4f;
+  color: #f4f5f6;
+  z-index: 10000 !important;
+  max-width: 220px !important;
+  min-width: 130px !important;
+}
+/* CAROUSEL */
+.carousel {
+  height: fit-content;
+}
+.carousel-inner .carousel-item img {
+  height: 100vh;
+}
+.carousel-bg-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.66);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.carousel-bg-info h2 {
+  font-weight: bold;
+  /* transform: translateY(-30px); */
+  font-size: 2.8rem;
+}
+.carousel-bg-info a {
+  font-size: 1.1rem;
+  width: fit-content;
+}
+.jumbotron-section {
+  background: #f5f6f7;
+  padding: 70px;
+}
+.jumbotron-section i{
+  font-size: 25px;
+  margin-left: 10px;
+}
+/* SAMPLE SHOTS  */
+.card-item {
+  border: solid 1px #ccc;
+}
+/* PRODUCTS SECTION */
+/* .header-text {
+  text-align: center;
+}
+.header-text h1,
+.header-text h2 {
+  position: relative;
+}
+.header-text h2::before,
+.header-text h2::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #3399ff;
+  display: inline-block;
+}
+.header-text h2::before {
+  margin: 0 15px 10px 0;
+}
+
+.header-text h2::after {
+  margin: 0 0 10px 15px;
+} */
+.product-section {
+  padding: 50px;
+}
+.card-bg {
+  height: 220px;
+}
+.card-bg-1{
+  background: url('../img/girl.webp');
+  background-position: top;
+  background-size: 300px;
+}
+.card-bg-2{
+  background: url('../img/girl2.webp');
+  background-position: top;
+  background-size: 300px;
+}
+.card-bg-3{
+  background: url('../img/girl3.webp');
+  background-position: center;
+  background-size: 300px;
+}
+.card-bg-4{
+  background: url('../img/girl4.webp');
+  background-position: center;
+  background-size: 200px;
+}
+/* SERVICES */
+.services-section {
+  position: relative;
+  height: fit-content !important;
+  background: #f5f6f7;
+  padding: 50px; 
+}
+.hoverion:hover {
+  color: #3399ff !important;
+}
+/* AWARDS */
+.awards {
+  height: fit-content;
+  padding: 70px;
+}
+.nav-tabs .nav-item .nav-link:hover {
+  background: none !important;
+}
+.nav-tabs .nav-item .nav-link {
+  border-bottom: solid 4px #ccc !important;
+}
+.nav-tabs .nav-item .nav-link.active {
+  color: #4f4f4f !important;
+  background: none;
+  border-color: #4f4f4f !important;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  background: #f5f6f7;
+}
+/* INQUIRIES */
+.inquire-section {
+  padding: 70px;
+  width: 100%;
+}
+.inquire-section .form-wrapper {
+  padding: 40px;
+  border: solid 1px #ccc;
+}
+.inquire-section .form-wrapper .form-control:hover,
+.inquire-section .form-wrapper .form-control:focus,
+.inquire-section .form-wrapper .form-control:active {
+  border: solid 2px #4f4f4f !important;
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 727px) {
+  .carousel-bg-info h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .carousel-bg-info h4 {
+    font-size: .9rem !important;
+  }
+  .carousel-bg-info a {
+    font-size: .9rem;
+    width: fit-content !important;
+  }
+  .jumbotron-section {
+    padding: 50px 20px !important;
+    height: 100%;
+    font-size: 93%;
+  }
+  .product-section {
+    height: 100%;
+    padding: 70px !important;
+  }
+  .product-section .card-bg {
+    height: 160px !important;
+  }
+  .product-section .card-item {
+    width: 100%;
+  }
+  .product-section .card-item .card-body {
+    position: relative;
+    padding: 20px;
+    font-size: 90%;
+  }
+  .services-section {
+    padding: 20px !important;
+  }
+  .services-section .card {
+    padding: 2px !important;
+  }
+  .services-section .card-title img {
+    transform: scale(0.8);
+  }
+  .awards {
+    height: fit-content;
+    width: 100%;
+    padding: 60px 15px !important;
+  }
+  .awards .row {
+    padding: 0px !important;
+    font-size: 95% !important;
+  }
+  .awards .nav-tabs {
+    width: 100%;
+  }
+  .awards .nav-tabs .nav-item{
+    width: 25% !important;
+  }
+  .testimonials {
+    padding: 20px !important;
+    height: 100%;
+  }
+  .testimonials .card, .testimonials p {
+    font-size: 95% !important;
+  }
+  .testimonials .card img {
+    transform: scale(0.8);
+  }
+  .inquire-section {
+    font-size: 95%;
+    padding: 70px 10px;
+  }
+}

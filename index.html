@@ -1,0 +1,764 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>KR Photography</title>
+  <meta content="KR Photography" name="description">
+  <meta content="photography, photos, kr photography" name="keywords">
+  <meta content="nogs" name="author">
+  <link href="assets/img/kr_logo.ico" rel="icon">
+  <link href="assets/img/kr_logo.ico" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim:ital,wght@0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/simple-notify/dist/simple-notify.min.css" />
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/utils.css">
+  <link rel="stylesheet" href="assets/css/styleshitter.css">
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+    .logo_super {
+      display: none;
+      height: 150px;
+      width: 100%;
+      margin-bottom: -30px;
+    }
+    .fabtotops {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      margin: 5px;
+      animation: ups-and-downs infinite alternate 0.6s;
+      box-shadow: 0 0 10px #000;
+    }
+    .inputter:active,
+    .inputter:focus,
+    .inputter:hover {
+        border: solid 3px #b9967f !important;
+        box-shadow: none !important;
+    }
+    @media screen and (max-width: 992px) {
+      .footer-header {
+        display: none;
+      }
+      .navbar-logo {
+        display: none;
+      }
+      .carousel-bg-info div {
+        margin-top: 130px !important;
+      }
+    }
+  </style>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
+    ></script>
+</head>
+<body>
+  <div id="#" class="carousel slide" data-mdb-ride="carousel">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light position-absolute top-0" style="z-index: 10000;">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/kr_logo.png" alt="Logo KR" class="img-fluid navbar-logo">
+        </a>
+        <button
+          class="navbar-toggler bg-transparent"
+          type="button text-white"
+          data-mdb-toggle="offcanvas"
+          data-mdb-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#awards">Awards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#inquire-section">Inquire</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-mdb-interval="5000">
+        <img src="./assets/img/swim.webp" class="d-block w-100" alt="Wild Landscape"/>
+      </div>
+      <div class="carousel-item" data-mdb-interval="5000">
+        <img src="./assets/img/province_retro.webp" class="d-block w-100" alt="Camera"/>
+      </div>
+      <div class="carousel-item" data-mdb-interval="5000">
+        <img src="./assets/img/mayon.webp" class="d-block w-100" alt="Exotic Fruits"/>
+      </div>
+      <div class="carousel-item" data-mdb-interval="5000">
+        <img src="./assets/img/uplb.webp" class="d-block w-100" alt="Exotic Fruits"/>
+      </div>
+      <div class="carousel-item" data-mdb-interval="5000">
+        <img src="./assets/img/waters.webp" class="d-block w-100" alt="Exotic Fruits"/>
+      </div>
+    </div>
+    <div class="carousel-bg-info">
+      <div class="d-block m-auto">
+        <img src="./assets/img/kr_logo.png" alt="Logo KR" class="img-fluid d-block logo_super">
+        <h2>KR Photography</h2>
+        <h4 class="text-center">Capture every moments of your life with us!</h4>
+        <a href="#jumbo" class="btn rounded-pill shadow-0 btn-outline-light d-block m-auto">Get Started</a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel"
+  >
+    <div class="offcanvas-header">
+      <!-- <h5 id="offcanvasRightLabel"></h5> -->
+      <button
+        type="button"
+        class="btn d-block ms-auto bg-transparent shadow-0"
+        data-mdb-dismiss="offcanvas"
+        aria-label="Close"
+      >
+      <i class="fa-solid fa-times text-white"></i>
+    </button>
+    <div class="clearfix"></div>
+    </div>
+    <div class="offcanvas-body">
+      <div class="offcanvas-links p-2">
+        <ul class="list-group">
+          <li class="list-group-item bg-transparent" style="width: fit-content;">
+            <a class="text-white" href="#">Home</a>
+          </li>
+          <li class="list-group-item bg-transparent" style="width: fit-content;">
+            <a class="text-white" href="#services">Services</a>
+          </li>
+          <li class="list-group-item bg-transparent" style="width: fit-content;">
+            <a class="text-white" href="#awards">Awards</a>
+          </li>
+          <li class="list-group-item bg-transparent" style="width: fit-content;">
+            <a class="text-white" href="#inquire-section">Inquire</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron-section" id="jumbo">
+    <div class="container" data-aos="fade-up" data-aos-duration="1500">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12">
+          <h2>Treasure every moments with memorable photos!</h2>
+          <p>Avail our packages and set appointment now! Please contact us below.</p>
+          <div class="row d-flex gy-2 mt-4">
+              <div class="col-sm-12">
+                  <a href="#inquire-section" class="btn btn-dark btn-sm shadow-0 rounded-pill m-2" style="width: fit-content;">Avail Now</a>
+              </div>
+              <div class="col-sm-12 d-flex justify-content-between align-items-center" style="width: fit-content;">
+                <a href="https://facebook.com/sunog.an003" target="_blank" class="m-2"><i class="fab fa-facebook text-primary"></i></a>
+                <a href="https://www.linkedin.com/in/karl-sunogan/" target="_blank" class="m-2"><i class="fab fa-linkedin" style="color: blue;"></i></a>
+                <a href="viber://chat?number=09774002607" target="_blank" class="m-2"><i class="fab fa-viber" style="color: blueviolet"></i></a>
+              </div>
+          </div>
+        </div>
+        <!-- <div class="col-lg-6 col-sm-12">
+          <a class="ripple" href="#!">
+            <img
+              alt="example"
+              class="img-fluid rounded"
+              src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp"
+            />
+          </a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <div class="product-section" id="mission">
+    <div class="container">
+      <div class="row mt-4">
+        <div class="header-text">
+          <h2>Our Mission</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row gy-4 my-5">
+      <div class="col-lg-6">
+        <div class="card-item" data-aos="fade-up" data-aos-duration="1500">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="card-bg card-bg-1"></div>
+            </div>
+            <div class="col-lg-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">Communication</h4>
+                <p><small>We communicate effectively with our clients, share ideas and understanding their emotions that will help for a better photograph.</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card-item" data-aos="fade-up" data-aos-duration="1500">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="card-bg card-bg-2"></div>
+            </div>
+            <div class="col-lg-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">Professionalism</h4>
+                <p><small>We practice professionalism by respecting our client's dignity, value their moments as well as the beauty of the environment.</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card-item" data-aos="fade-up" data-aos-duration="1500">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="card-bg card-bg-3"></div>
+            </div>
+            <div class="col-lg-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">Integrity</h4>
+                <p><small>We build trust with our clients with being honest, having a strong moral principles and value their privacy for a long lasting relationships.</small> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card-item" data-aos="fade-up" data-aos-duration="1500">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="card-bg card-bg-4"></div>
+            </div>
+            <div class="col-lg-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">Punctuality</h4>
+                <p><small>We ensure that we will arrive in time for meetings, appointments or events. We value time to capture right moments and create perfect images for our clients.</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="services-section position-relative" id="services">
+    <div class="container">
+      <div class="row my-4">
+        <div class="header-text">
+          <h2>Services</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-5 position-relative" style="padding: 10px;">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-sm-12">
+          <div class="card shadow-0 p-4" style="border-radius: 0% !important;" data-aos="fade-up" data-aos-duration="1500">
+            <a href="services_wb.html" style="color: #4f4f4f;" class="hoverion">
+              <div class="card-body">
+                <h5 class="card-title position-relative">
+                  <img src="./assets/img/wedring.webp" alt="" 
+                  style="
+                  height: 50px;
+                  width: 50px;
+                  "
+                  class="img-fluid position-relative"
+                  >
+                  Wedding & Baptismal
+                </h5>
+                <p class="card-text">
+                  <small>We offer a range of services including wedding portraits, baby shoots, full coverage of bridal and baptismal shots.</small>
+                </p>
+                <button class="btn btn-dark btn-sm shadow-0">Learn More</button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <div class="card shadow-0 p-4" style="border-radius: 0% !important;" data-aos="fade-up"  data-aos-duration="1500">
+            <a href="services_private.html" style="color: #4f4f4f;" class="hoverion">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./assets/img/camera.webp" alt="" 
+                  style="
+                  height: 50px;
+                  width: 50px;
+                  "
+                  class="img-fluid position-relative"
+                  >
+                  Private
+                </h5>
+                <p class="card-text">
+                  <small>We offer full photography or videography of your travel, blog or any private and personal needs. Same day results will be guaranteed for this offer.</small>
+                </p>
+                <button class="btn btn-dark btn-sm shadow-0">Learn More</button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <div class="card shadow-0 p-4" style="border-radius: 0% !important;" data-aos="fade-up"  data-aos-duration="1500">
+            <a href="services_funeral.html" style="color: #4f4f4f;" class="hoverion">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./assets/img/burial.webp" alt="" 
+                  style="
+                  height: 50px;
+                  width: 50px;
+                  "
+                  class="img-fluid position-relative"
+                  >
+                  Funeral
+                </h5>
+                <p class="card-text">
+                 <small>We will capture the beautiful moments in our clients’ lives that will last a lifetime by covering photographs from deathbed/funeral to burial.</small>
+                </p>
+                <button class="btn btn-dark btn-sm shadow-0">Learn More</button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <div class="card shadow-0 p-4" style="border-radius: 0% !important;" data-aos="fade-up"  data-aos-duration="1500">
+            <a href="services_events.html" style="color: #4f4f4f;" class="hoverion">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./assets/img/balloon.webp" alt="" 
+                  style="
+                  height: 50px;
+                  width: 50px;
+                  "
+                  class="img-fluid position-relative"
+                  >
+                  Event
+                </h5>
+                <p class="card-text">
+                  <small>We will provide the full coverage for the event such as birthday parties, family reunion, company, school or other events</small>
+                </p>
+                <button class="btn btn-dark btn-sm shadow-0">Learn More</button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <div class="card shadow-0 p-4" style="border-radius: 0% !important;" data-aos="fade-up"  data-aos-duration="1500">
+            <a href="services_model.html" style="color: #4f4f4f;" class="hoverion">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./assets/img/heels.webp" alt="" 
+                  style="
+                  height: 50px;
+                  width: 50px;
+                  "
+                  class="img-fluid position-relative"
+                  >
+                  Modeling
+                </h5>
+                <p class="card-text">
+                  <small>We offer modeling photography that will make our client's feel the confidence with their beauty and excellence</small>
+                </p>
+                <button class="btn btn-dark btn-sm shadow-0">Learn More</button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <div class="card shadow-0 p-4" style="border-radius: 0% !important;" data-aos="fade-up"  data-aos-duration="1500">
+            <a href="services_ads.html" style="color: #4f4f4f;" class="hoverion">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./assets/img/business.webp" alt="" 
+                  style="
+                  height: 50px;
+                  width: 50px;
+                  "
+                  class="img-fluid position-relative"
+                  >
+                  Business
+                </h5>
+                <p class="card-text">
+                  <small>Improve and boost your business with our product or business photography that will make your customers proud</small>
+                </p>
+                <button class="btn btn-dark btn-sm shadow-0">Learn More</button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="awards position-relative" id="awards">
+    <div class="row" data-aos="fade-up"  data-aos-duration="1500">
+      <div class="header-text mb-3">
+        <h2>Awards</h2>
+      </div>
+      <p>We are glad to share our accomplishments with our photographs through the years of our profession. Here's the list of our awards we won from different prestigious events.</p>
+    </div>
+    <br><br>
+    <div class="container position-relative" data-aos="fade-up"  data-aos-duration="1500">
+      <div class="row my-4 w-100" style="padding: 0px 110px;">
+        <ul class="nav nav-tabs row text-center g-2 d-flex">
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-mdb-toggle="tab" data-mdb-target="#tab-1">
+              <h6>2023</h6>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-mdb-toggle="tab" data-mdb-target="#tab-2">
+              <h6>2022</h6>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-mdb-toggle="tab" data-mdb-target="#tab-3">
+              <h6>2020</h6>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-mdb-toggle="tab" data-mdb-target="#tab-4">
+              <h6>2018</h6>
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content mt-5">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <h3>Manila City lights</h3>
+                <h6>Photo of the Year | May <sup>10th</sup></h6>
+                <br>
+                <p>The image below was taken in Makati City, Metro Manila, Philippines. This is one of the most popular and richest city in the whole country, home of millions of Filipinos and thousands of huge skyscrapers.</p>
+                <ul class="my-4" style="line-height: 50px;">
+                  <li style="list-style: none;"><i class="fa-solid fa-clipboard-check me-3"></i>Won 15,000,000,000 euros</li>
+                  <li style="list-style: none;"><i class="fa-solid fa-clipboard-check me-3"></i>Beaten 25 million entries around the world</li>
+                  <li style="list-style: none;"><i class="fa-solid fa-clipboard-check me-3"></i>Exhibited to different prestigious events</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <img src="./assets/img/manila.webp" class="img-fluid glightbox" style="max-height: 350px !important; width: 100%;">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                  <h3>Raining in Calamba</h3>
+                  <h6>Photo of the Year | August <sup>22nd</sup></h6>
+                  <br>
+                  <p>
+                    A flood happened in Brgy. Bucal to Brgy. Halang in Calamba City, Laguna due to non-stop raining in Luzon Island.
+                  </p>
+                  <ul class="my-4" style="line-height: 50px;">
+                    <li style="list-style: none;"><i class="fa-solid fa-clipboard-check me-3"></i>Won 750,000,000 euros</li>
+                    <li style="list-style: none;"><i class="fa-solid fa-clipboard-check me-3"></i>Beaten 16 million entries around the world</li>
+                  </ul>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <img src="./assets/img/calamba.webp" class="img-fluid glightbox" style="max-height: 350px !important; width: 100%;">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <h3>Into the Woods</h3>
+                <h6>Photo of the Year | May <sup>22nd</sup></h6>
+                <br>
+                <p>A dark, magical place to release all your emotions. But beware of the snakes or wild animals there.</p>
+                <ul class="my-4" style="line-height: 50px;">
+                  <li style="list-style: none;"><i class="fa-solid fa-clipboard-check me-3"></i>Won 500,000,000 euros</li>
+                  <li style="list-style: none;"><i class="fa-solid fa-clipboard-check me-3"></i>Beaten 20 million entries around the world</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <img src="./assets/img/dark.webp" class="img-fluid glightbox" style="max-height: 350px !important; width: 100%;">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <h3>Croc of Greed</h3>
+                <h6>Photo of the Year | December <sup>21st</sup></h6>
+                <br>
+                <p>Amazing young crocodile ready to roam the streets of Manila.</p>
+                <ul class="my-4" style="line-height: 50px;">
+                  <li style="list-style: none;"><i class="fa-solid fa-clipboard-check me-3"></i>Won 10,000,000 euros</li>
+                  <li style="list-style: none;"><i class="fa-solid fa-clipboard-check me-3"></i>Beaten 2.5 million entries around the world</li>
+                  <li style="list-style: none;"><i class="fa-solid fa-clipboard-check me-3"></i>First ever photo to get 500 billion downloads in only 1 hour</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <img src="./assets/img/croco.webp" class="img-fluid glightbox" style="max-height: 350px !important; width: 100%;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="testimonials p-5" id="testimonials">
+    <div class="container py-5">
+      <div class="row d-flex justify-content-center" data-aos="fade-up"  data-aos-duration="1500">
+        <div class="col-md-10 col-xl-8 text-center">
+          <h4 class="mb-4">Testimonials</h4>
+          <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+            Here are some of the testimonials of people who are part of the company and from other companies. We hope that many more will be partnered with us so that we continue to help more people in the future.
+          </p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="card" style="border-radius: 0% !important;" data-aos="fade-up"  data-aos-duration="1500">
+            <div class="card-body py-4 mt-2">
+              <div class="d-flex justify-content-center mb-4">
+              <img src="./assets/img/weddie.webp"
+                class="rounded-circle shadow-1-strong" width="100" height="100" />
+              </div>
+              <h5 class="font-weight-bold">Wendy Go</h5>
+              <h6 class="font-weight-bold my-3">Wedding Photography Client</h6>
+              <ul class="list-unstyled d-flex justify-content-center">
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              </ul>
+              <p class="mb-2">
+              <i class="fas fa-quote-left pe-2"></i><small>
+              Your photography was absolutely stunning, and we are so grateful that you were able to capture our special moments so perfectly. We loved the way you captured the emotion of the day, from the first look to the last dance. You captured the beauty of our surroundings, as well as the love and joy that we shared with our family and friends.
+              Thank you for everything you did to make our wedding day so special, we are so grateful for your talent and your dedication to your work.</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="card" style="border-radius: 0% !important;" data-aos="fade-up"  data-aos-duration="1500">
+            <div class="card-body py-4 mt-2">
+              <div class="d-flex justify-content-center mb-4">
+              <img src="./assets/img/chinita.webp"
+                class="rounded-circle shadow-1-strong" width="100" height="100" />
+              </div>
+              <h5 class="font-weight-bold">Michaela Yuki</h5>
+              <h6 class="font-weight-bold my-3">Model</h6>
+              <ul class="list-unstyled d-flex justify-content-center">
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              </ul>
+              <p class="mb-2">
+              <i class="fas fa-quote-left pe-2"></i><small>I am writing to express my sincere gratitude for your wonderful work on my pageant photos. I was so impressed with your professionalism, your eye for detail, and your ability to capture my best side.
+                I was especially thrilled with the way you captured my personality in the photos. You were able to make me feel relaxed and confident, and it really showed in the pictures.
+                I am so happy with the final product, and I know that I will cherish these photos for years to come. Thank you again for your amazing work!</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-0">
+          <div class="card" style="border-radius: 0% !important;" data-aos="fade-up"  data-aos-duration="1500">
+            <div class="card-body py-4 mt-2">
+              <div class="d-flex justify-content-center mb-4">
+              <img src="./assets/img/nice.jpg"
+                class="rounded-circle shadow-1-strong" width="100" height="100" />
+              </div>
+              <h5 class="font-weight-bold">Jenny S.</h5>
+              <h6 class="font-weight-bold my-3">CEO at DOTAX</h6>
+              <ul class="list-unstyled d-flex justify-content-center">
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              </ul>
+              <p class="mb-2">
+              <i class="fas fa-quote-left pe-2"></i>
+              <small>I am writing to thank you for your wonderful work at our company event last week. Your photos were absolutely stunning, and they perfectly captured the spirit of the event.
+                I was particularly impressed with your ability to capture the candid moments between our employees. You really captured the essence of our company culture, and I know that our employees will cherish these photos for years to come.
+                Thank you again for your excellent work. We are so grateful to have you as a part of our team.</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inquire-section" id="inquire-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 mb-5">
+          <div class="inquire-content">
+            <div class="header-text mb-3">
+              <h2>Inquire With Us</h2>
+            </div>
+            <p>You can avail our services here and get a bonus 20% discount on your very first purchase and get a chance to win 20% bonus Discount Voucher (Stackable) every 2 years. More details will be further discussed with us on our email.</p>
+          </div>
+          <img src="./assets/img/camera1.webp" alt="Camera Design" class="img-fluid d-block m-auto" style="height: 120px;">
+        </div>
+        <div class="col-lg-6 col-sm-12 mb-5">
+          <div class="form-wrapper">
+            <form action="index.html" method="POST" id="inquiry-form">
+              <div class="form-group mb-3">
+                <label>Enter Email Address:</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email Address here">
+              </div>
+              <div class="form-group mb-3">
+                <label>Photography Service:</label>
+                <select name="service" id="service" class="form-control">
+                  <option value="">Select One...</option>
+                  <option value="Inquiry for Wedding & Baptismal Photography">Wedding & Baptismal Photography</option>
+                  <option value="Inquiry for Funeral Photography">Funeral Photography</option>
+                  <option value="Inquiry for Private Photography">Private Photography</option>
+                  <option value="Inquiry for Business Photography">Business Photography</option>
+                  <option value="Inquiry for Model Photography">Model Photography</option>
+                  <option value="Inquiry for Event Photography">Event Photography</option>
+                </select>
+              </div>
+              <div class="form-group mb-3">
+                <label>Short Message <small>(Please include your full name)</small></label>
+                <textarea name="message" id="message" rows="1" class="form-control" oninput="auto_grow(this)"></textarea>
+              </div>
+              <button class="btn btn-dark btn-sm shadow-0 form-control" id="submit">
+                  Send Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer text-center text-white text-lg-start" id="footer">
+    <div class="p-4">
+        <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+              <img src="./assets/img/kr_logo.png" alt="Footer Logo" class="img-fluid">
+              <h4 class="text-center footer-header">KR Photography</h4>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Branches
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Cabuyao</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Calamba</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Liliw</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Pagsanjan</a>
+              </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fa-solid fa-home me-3 text-secondary"></i> Calamba, Laguna, 4027, PH</p>
+            <p>
+              <i class="fa-solid fa-envelope me-3 text-secondary"></i>
+              sunogan77@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone me-3 text-secondary"></i> +63977 400 2607</p>
+          </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Main Location
+          </h6>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3868.453841482902!2d121.104001!3d14.168176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd65ed00eea561%3A0x9189858f2b86a7ac!2sDreambuilders%20Pro%20Inc!5e0!3m2!1sen!2sph!4v1691131778235!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © 2023
+        <a class="text-reset fw-bold" href="https://sunogan.surge.sh/">Nagonus</a>
+    </div>
+    </footer>
+    <a href="#" type="button" class="btn btn-dark btn-floating shadow-sm fabtotops">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+</body>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/simple-notify/dist/simple-notify.min.js"></script>
+<script src="assets/js/api.js"></script>
+<script>
+  const fabtotop = document.querySelector('.fabtotops');
+  fabtotop.style.display = "none"
+
+  window.addEventListener('scroll', function(e){
+    if(window.scrollY > 700) {
+      fabtotop.style.display= "block"
+    } else {
+      fabtotop.style.display= "none"
+    }
+  })
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 300,
+    speedAsDuration: true
+  });
+
+  const glightbox = GLightbox({
+      selector: '.glightbox'
+  });
+
+  document.querySelector('.navbar-toggler').addEventListener('click', function(e){
+    document.querySelector('.navbar-collapse').style.display = "none"
+  })
+
+  AOS.init()
+</script>
+</html>
