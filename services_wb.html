@@ -47,7 +47,7 @@
       height: 100%;
       width: 100%;
       transform: scale(1.15);
-      object-fit: cover;
+      object-fit: fill;
     }
     @media screen and (max-width: 727px) {
       .logo_super {
@@ -58,6 +58,10 @@
       }
       .footer-header {
         display: none;
+      }
+      .carousel-item img {
+        object-fit: cover;
+        transform: scale(1.3);
       }
     }
   </style>
